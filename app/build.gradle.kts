@@ -17,8 +17,8 @@ tasks.withType<KotlinCompile> {
 }
 
 dependencies {
-    // Align versions of all Kotlin components
-    implementation(platform("org.jetbrains.kotlin:kotlin-bom"))
+    // // Align versions of all Kotlin components
+    implementation(platform("org.jetbrains.kotlin:kotlin-bom:1.5.+"))
 
     // Use the Kotlin JDK
     implementation("org.jetbrains.kotlin:kotlin-stdlib")
@@ -70,8 +70,8 @@ dependencies {
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
 
     // dagger
-    implementation("com.google.dagger:dagger:2.+")
-    kapt("com.google.dagger:dagger-compiler:2.+")
+    implementation("com.google.dagger:dagger:2.42")
+    kapt("com.google.dagger:dagger-compiler:2.42")
 
     // Use the Kotlin test library.
     testImplementation(kotlin("test-junit5"))
